@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-br" data-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,38 @@
 </head>
 <body>
     <header class="header">
+        <nav class="header__nav">
+            <ul class="menu menu--principal">
+                <li class="menu__item">
+                    <a class="menu__link" href="#home">
+                    <span class="menu__text">Home</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#projetos">
+                    <span class="menu__text">Projetos</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#sobre">
+                    <span class="menu__text">Sobre</span>
+                    </a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#contato ">
+                        <span class="menu__text">Contato</span>
+                    </a>
+                </li>    
+            </ul>
+        </nav>
         <div class="header__brand">
             <img class="logo" src="./assets/images/logo-hb.png" alt="logo HB">
         </div>
-        <i id="theme-toggle" class="bi bi-sun"></i>
+        <div class="header__toggle">
+            <i id="theme-toggle" class="bi bi-sun"></i>
+        </div>
     </header>
-    <nav>
+    <nav class="nav--mobile">
         <ul class="menu menu--mobile">
             <li class="menu__item">
                 <a class="menu__link" href="#home">
@@ -44,7 +70,11 @@
             </li>    
         </ul>
     </nav>
-    <h1>Henrique Bandeira</h1>
-    
+    <main></main>
+    <footer>
+        <p class="footer__text"> &copy; 2025 Desenvolvido por <a href="https://github.com/SpyHenry">Henrique Bandeira</a>
+        </p>
+    </footer>
+    <script src="./assets/script/engine.js"></script>
 </body>
 </html>
