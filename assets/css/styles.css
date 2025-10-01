@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap');
 
 :root, :root[data-theme='dark'] {
     --primary-color: #F0F0F0;
@@ -7,7 +8,7 @@
     --secondary-color: #1A1A1A;
     --border-color: #333333;
 
-    --title-color: #9A9A9C;
+    --title-color: #F0F0F0;
     --text-color: #9A9A9C;
     --link-color: #9A9A9C;
     --icon-color: #C7C8C9;
@@ -16,7 +17,7 @@
 :root[data-theme='light'] {
     --primary-color: #121212;
 
-    --primary-bg-color: #F0F0F0;
+    --primary-bg-color: #E9E9E9;
     --secondary-color: #E1E1E1;
     --border-color: #E1E1E1;
 
@@ -40,6 +41,23 @@ body {
     background-color: var(--primary-bg-color);
     font-family: 'Inter', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+h1, h2, h3 {
+    font-family: 'League Spartan', sans-serif;
+    text-transform: uppercase;
+    color: var(--title-color);
+}
+
+h1 {
+    font-size: 2.5rem;;
+}
+
+p {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 1.25rem;
+    text-align: justify;
+} 
 
 i {
     color: var(--icon-color);
@@ -139,10 +157,64 @@ a:hover {
 .header__nav {
     display: none;
 }
+
 .menu--principal {
     gap: 1rem;
 }
 
+.menu--social {
+    gap: 0.5rem;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 100%;
+    background: transparent;
+    border-radius: 3.125rem;
+    padding: 0.875rem 1rem;
+}
+
+.btn span, .btn i {
+   font-size: 1.25rem;
+   text-transform: uppercase;
+}
+
+.btn--primary {
+    border: 1px solid var(--primary-color);
+}
+
+.btn--primary span {
+    color: var(--primary-color);
+}
+
+.btn--primary:hover {
+    cursor: pointer;
+    background: var(--text-color);
+    color: var(--text-color);
+    transition: all 0.3s ease;
+}
+
+main {
+    padding: 2.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main__content1 {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+footer p {
+    text-align: center;
+    font-size: .875rem;
+    color: var(--text-color);
+}
 
 @media (min-width: 768px) {
     .header {
