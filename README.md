@@ -1,14 +1,12 @@
-<div align="center">
-	<img src="./assets/images/logo-hb.png" alt="Logo" height="90" />
-  
-	<h1>Portfólio • Henrique Bandeira</h1>
-	<p>Projeto pessoal para apresentar habilidades técnicas, projetos e formação acadêmica.</p>
-  
-	<p>
-		<a href="https://spyhenry.github.io" target="_blank"><b>🔗 Acessar Online</b></a>
-	</p>
+<p align="center">
+  <img src="assets/images/logo-hb.png" alt="Logo" height="90" />
+</p>
 
-</div>
+<h1 align="center">Portfólio</h1>
+
+<p align="center">Projeto pessoal para apresentar habilidades técnicas, projetos e formação acadêmica.</p>
+
+<p align="center"><a href="https://spyhenry.github.io" target="_blank">🔗 Acessar Online</a></p>
 
 ---
 
