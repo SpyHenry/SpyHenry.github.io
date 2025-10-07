@@ -1,107 +1,485 @@
 <!DOCTYPE html>
-<html lang="pt-br" data-theme="dark">
+<html lang="pt-BR" data-theme="dark">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Henrique Bandeira | Portfólio</title>
-    <meta name="description" content="Portfólio de Henrique Bandeira">
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Henrique Bandeira | Portfólio</title>
+  <meta name="description" content="Portfólio do Henrique Bandeira para compartilhar projetos e habilidades desenvolvidas.">
+
+  <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 <body>
-    <header class="header">
-        <nav class="header__nav">
-            <ul class="menu menu--principal">
-                <li class="menu__item">
-                    <a class="menu__link" href="#home">
-                    <span class="menu__text">Home</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#projetos">
-                    <span class="menu__text">Projetos</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#sobre">
-                    <span class="menu__text">Sobre</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="#contato ">
-                        <span class="menu__text">Contato</span>
-                    </a>
-                </li>    
-            </ul>
-        </nav>
-        <div class="header__brand">
-            <img class="logo" src="./assets/images/logo-hb.png" alt="logo HB">
-        </div>
-        <div class="header__toggle">
-            <i id="theme-toggle" class="bi bi-sun"></i>
-        </div>
-    </header>
-    <nav class="nav--mobile">
-        <ul class="menu menu--mobile">
-            <li class="menu__item">
-                <a class="menu__link" href="#home">
-                    <i class="menu__icon bi bi-house"></i>
-                    <span class="menu__text">Home</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#projetos">
-                    <i class="menu__icon bi bi-window-stack"></i>
-                    <span class="menu__text">Projetos</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#sobre">
-                    <i class="menu__icon bi bi-person"></i>
-                    <span class="menu__text">Sobre</span>
-                </a>
-            </li>
-            <li class="menu__item">
-                <a class="menu__link" href="#contato ">
-                    <i class="menu__icon bi bi-house"></i>
-                    <span class="menu__text">Contato</span>
-                </a>
-            </li>    
-        </ul>
+  <header class="header">
+    <nav class="header__nav">
+      <ul class="menu menu--principal">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <span class="menu__text">Projetos</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <span class="menu__text">Sobre</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <span class="menu__text">Contato</span>
+          </a>
+        </li>
+      </ul>
     </nav>
-    <main>
-        <div class="main__content1">
-            <h1>Meu Portfólio</h1>
-            <p>Henrique Bandeira, São Paulo-SP, Técnico em Redes de Computadores e graduando em Ciência da Computação.</p>
-            <ul class="menu menu--social">
-                <li>
-                    <a class="menu__link" href="https://github.com/SpyHenry"><i class="menu__icon bi bi-github"></i></a>
-                </li>
-                <li>
-                    <a class="menu__link" href="https://www.linkedin.com/in/henrique-baptista-bandeira">
-                    <i class="menu__icon bi bi-linkedin"></i>
-                    </a>
-                </li>
-                <li>
-                    <a class="menu__link" href="https://">
-                    <i class="menu__icon bi bi-instagram"></i>
-                    </a>
-                </li>
-            </ul>
-            <button class="btn btn--primary" onclick="location.href='#projetos'">
-                <span>Ver Projetos</span>
-                <i class="bi bi-arrow-down-right"></i>
+    <div class="header__brand">
+      <a href="#home">
+        <img class="brand__logo" src="./assets/images/logo-hb.png" alt="Logo HB">
+      </a>
+    </div>
+    <div class="header__toggle">
+      <i id="toggleTheme" class="bi bi-sun"></i>
+    </div>
+  </header>
+  <nav class="nav--mobile">
+    <ul class="menu menu--mobile">
+      <li class="menu__item">
+        <a class="menu__link active" href="#home">
+          <i class="menu__icon bi bi-house-door"></i>
+          <span class="menu__text">Home</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#projetos">
+          <i class="menu__icon bi bi-window-stack"></i>
+          <span class="menu__text">Projetos</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#sobre">
+          <i class="menu__icon bi bi-person"></i>
+          <span class="menu__text">Sobre</span>
+        </a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contato">
+          <i class="menu__icon bi bi-envelope"></i>
+          <span class="menu__text">Contato</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <main id="home">
+    <div class="main__content1">
+      <h1><b>Meu Portifólio</b></h1>
+      <p>Henrique Bandeira, São Paulo-SP, Formado em Técnico de Redes de Computadores, atualmente cursando Ciência da Computação.</p> 
+      <ul class="menu menu--social">
+        <li>
+          <a class="menu__link" href="https://github.com/SpyHenry" target="_blank">
+            <i class="menu__icon bi bi-github"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.linkedin.com/in/henrique-baptista-bandeira/" target="_blank">
+            <i class="menu__icon bi bi-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a class="menu__link" href="https://www.instagram.com/henry_bband/" target="_blank">
+            <i class="menu__icon bi bi-instagram"></i>
+          </a>
+        </li>
+      </ul>
+      <a href="#projetos">
+        <button class="btn btn--primary">
+          <span>Ver Projetos</span>
+          <i class="bi bi-arrow-down-right"></i>
+        </button>  
+      </a>
+    </div>
+    <div class="main__content2">
+      <!-- <iframe src="https://www.youtube.com/embed/HXKz2-Sohfo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+    </div>
+  </main>
+
+  <section class="technologies">
+    <h2>Habilidades Técnicas</h2>
+    <ul class="technologies__list">
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/html.png" alt="Logo HTML">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/css-3.png" alt="Logo CSS">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/script-java.png" alt="Logo JavaScript">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/servidor-sql.png" alt="Logo SQL">
+      </li>
+            <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/plataforma-linux.png" alt="Logo Linux">
+      </li>
+            <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/rj-45.png" alt="Logo Redes de Computadores">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/python.png" alt="Logo Python">
+      </li>
+      <li class="technologies__item">
+        <img class="technologies__logo" src="./assets/images/skills/programacao.png" alt="Logo Programação">
+      </li>
+    </ul>
+  </section>
+
+  <section id="projetos" class="projects">
+    <h2>Projetos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="./assets/images/projetos/sacred.png" alt="Capa Sacred Ocean">
+        <div class="card__body">
+          <h3 class="card__title">Sacred Ocean</h3>
+          <p class="card__description">Plataforma WEB de conscientização sobre a preservação dos oceanos.</p>
+          <ul class="card__list">
+            <li class="card__item">Conscientização;</li>
+            <li class="card__item">Educação;</li>
+            <li class="card__item">Informações/Curiosidades sobre o Oceano.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/html.png" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/css-3.png" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/script-java.png" alt="Logo JavaScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/responsive.png" alt="Resposividade">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://spyhenry.github.io/Sacred-Ocean/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <a href="https://github.com/SpyHenry/Sacred-Ocean" target="_blank">
+                <button class="btn">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="./assets/images/projetos/batverse.png" alt="Capa Batverse">
+        <div class="card__body">
+          <h3 class="card__title">Batverse</h3>
+          <p class="card__description">Plataforma WEB dedicada aos principais Batmans do cinema.</p>
+          <ul class="card__list">
+            <li class="card__item">Animação 3D;</li>
+            <li class="card__item">Trailers e Áudios temáticos;</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/html.png" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/css-3.png" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/script-java.png" alt="Logo JavaScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/responsive.png" alt="Resposividade">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://spyhenry.github.io/Batverse/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <a href="https://github.com/SpyHenry/Batverse" target="_blank">
+                <button class="btn">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card">
+        <img class="card__cover" src="./assets/images/projetos/detona-ralph.png" alt="Capa Detona Ralph">
+        <div class="card__body">
+          <h3 class="card__title">Eu vou Detonar!</h3>
+          <p class="card__description">Jogo do Detona Ralph.</p>
+          <ul class="card__list">
+            <li class="card__item">Hall da Fama;</li>
+            <li class="card__item">Sobreviva ao Ralph;</li>
+            <li class="card__item">Filtragem por preço e categoria.</li>
+          </ul>
+          <ul class="technologies__list">
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/html.png" alt="Logo HTML">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/css-3.png" alt="Logo CSS">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/script-java.png" alt="Logo JavaScript">
+            </li>
+            <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/responsive.png" alt="Resposividade">
+            </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://spyhenry.github.io/Detona-Ralph-Game/" target="_blank">
+              <button class="btn btn--primary">
+                <span>Prévia</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <a href="https://github.com/SpyHenry/Detona-Ralph-Game" target="_blank">
+                <button class="btn">
+                  <span>Repositório</span>
+                </button>
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+      <a href="https://github.com/SpyHenry" target="_blank">
+        <button class="btn btn--primary">
+          <span>Ver Todos os Projetos</span>
+          <i class="bi bi-arrow-up-right"></i>
+        </button>  
+      </a>
+    </div>
+    <h2>Projetos Acadêmicos</h2>
+    <div class="projects__container">
+      <div class="projects__card">
+        <img class="card__cover" src="./assets/images/projetos/OBT.png" alt="Capa OBT">
+        <div class="card__body">
+          <h3 class="card__title">Olimpíadas Brasileira de Tecnologia</h3>
+          <p class="card__description">Sistema de Monitoramento de um biodigestor</p>
+          <ul class="card__list">
+            <li class="card__item"> O objetivo era maximizar uma das energias limpas implantada IFSP-Pirituba (biodigestor);</li>
+            <li class="card__item"> Implantação de sensores para monitorar os níveis de gases inflamáveis.</li>
+            <li class="card__item"> Equipe:
+              <a href="https://www.linkedin.com/in/henrique-baptista-bandeira/" target="_blank">Henrique Baptista Bandeira</a>,
+              Nataly de Sousa Dias,
+              Yasmin Cardoso Gamboa,
+              <a href="https://www.linkedin.com/in/arthur-lucas-rodrigues/" target="_blank">Arthur Lucas Rodrigues</a>,
+              <a href="https://www.linkedin.com/in/julia-vilela/" target="_blank">Julia Vilela Araújo da Silva</a> e
+              <a href="https://www.linkedin.com/in/vit%C3%B3ria-souza-198152240/" target="_blank">Vitória Souza Alves da Silva</a>.
+            </li>
+          </ul>
+          <ul class="technologies__list">
+          <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/figma.png" alt="Logo Figma">
+          </li>
+          <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/responsive.png" alt="Resposividade">
+          </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://ptb.ifsp.edu.br/index.php/noticias-e-publicacoes/item/1468-estudantes-de-redes-e-logistica-avancam-de-fase-em-participacao-de-olimpiada-brasileira-de-tecnologia" target="_blank">
+              <button class="btn btn--primary">
+                <span>Post</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+              <a href="https://www.linkedin.com/posts/vit%C3%B3ria-souza-198152240_obt-ifsp-olimpaedadabrasileira-activity-7100549001342574593-MVNw?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6GsbMBCiwODrif4HxdnM43f_SS0k3UbeM" target="_blank">
+                <button class="btn">
+                  <span>LinkedIn</span>
+                </button>
+              </a>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="projects__card card--reverse">
+        <img class="card__cover" src="./assets/images/projetos/trio-dev.png" alt="Capa OBT">
+        <div class="card__body">
+          <h3 class="card__title">Maratona InterIF</h3>
+          <p class="card__description">Competição entre IFs, utilizando programação para desenvolvimento de soluções.</p>
+          <ul class="card__list">
+            <li class="card__item">Participação na final da VI Maratona InterIF no IFSP-Campinas</li>
+            <li class="card__item"> Equipe: 
+        <a href="https://www.linkedin.com/in/henrique-baptista-bandeira/" target="_blank">Henrique Baptista Bandeira</a>,
+        <a href="https://www.linkedin.com/in/murilo-souza-teixeira-48461025b/" target="_blank">Murilo Souza Teixeira</a>,
+        <a href="https://www.linkedin.com/in/vinicius-sant/" target="_blank">Vinicius Alves Rocha dos Santos</a></li>
+          </ul>
+          <ul class="technologies__list">
+          <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/python.png" alt="Logo Python">
+          </li>
+          <li class="technologies__item">
+              <img class="technologies__logo" src="./assets/images/skills/programacao.png" alt="programação">
+          </li>
+          </ul>
+          <div class="card__buttons">
+            <a href="https://www.linkedin.com/posts/henrique-baptista-bandeira_vimaratonainterif-activity-7134606806953148416-w2ZO?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD6GsbMBCiwODrif4HxdnM43f_SS0k3UbeM" target="_blank">
+              <button class="btn btn--primary">
+                <span>Post</span>
+                <i class="bi bi-arrow-up-right"></i>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="about">
+    <div class="about__content1">
+      <img class="about__photo" src="assets/images/avatar.jpg" alt="">
+      <div class="about__description">
+        <h2>Sobre mim</h2>
+        <p>Formado em Técnico de Redes de Computadores, e atualmente cursando Ciência da Computação, busco oportunidades para aplicar meus conhecimentos ao mesmo tempo em que desenvolvo habilidades técnicas e práticas na área.
+        </p>  
+        <div class="about__icons">
+          <i class="bi bi-translate"></i>
+          <span>Inglês: Intermediário | Espanhol: Básico</span>
+        </div>
+        <div class="description__buttons">
+          <a href="https://www.linkedin.com/in/henrique-baptista-bandeira/" target="_blank">
+            <button class="btn btn--primary">
+              <span>Conecte-se Comigo</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button> 
+          </a>
+          <!-- <a href="">
+            <button class="btn">
+              <span>Currículo</span>
             </button>
+          </a> -->
         </div>
-        <div class="main__content2">
-            <img class="main__image" src="./assets/images/coding.svg" alt="Imagem de código">
+      </div>
+    </div>
+    <div class="about__content2">
+      <div class="col1">
+        <div class="row1">
+          <h3>Formação</h3>
+          <h4>Ciência da Computação - Cursando</h4>
+          <span>Fev 2025 - Atualmente</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>FAM - Faculdade das Américas</span>
+          </div>
+          <div class="about__icons">
+            <i class="bi bi-mortarboard"></i>
+            <h4>Técnico em Redes de Computadores</h4>
+          </div>
+          <span>Fev 2022 - Dez 2024</span>
+          <div class="about__icons">
+            <i class="bi bi-bank"></i>
+            <span>IFSP - Câmpus Pirituba</span>
+          </div>
         </div>
-    </main>
-    <footer>
-        <p class="footer__text"> &copy; 2025 Desenvolvido por <a href="https://github.com/SpyHenry">Henrique Bandeira</a>
-        </p>
-    </footer>
-    <script src="./assets/script/engine.js"></script>
+        <!-- <div class="row2">
+          <h3>Experiências</h3>
+          <h4>---</h4>
+          <span>---</span>
+          <span>---</span>
+          <ul class="about__list">
+            <li class="about__item">-</li>
+            <li class="about__item">-</li>
+            <li class="about__item">-</li>
+          </ul>
+        </div> -->
+      </div>
+      <div class="col2">
+        <h3>Cursos</h3>
+        <div id="accordion">
+          <div class="accordion__item active">
+            <button class="accordion__header start">
+              <span>Ri Happy - Front-end do Zero #2</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Digital Innovation One | Ri Happy. Out 2025. 75h.
+              </p>
+              <p>
+                Bootcamp completo focado em desenvolvimento Front-End, com 10 projetos práticos utilizando HTML, CSS e JavaScript. O curso aborda desde fundamentos até a criação de páginas web responsivas e dinâmicas. Inclui desafios de código e projetos, além de ranking, fórum, rooms para networking e certificado. Com esse bootcamp, desenvolvi meu portfólio e os projetos que estão aqui apresentados, adquirindo habilidades essenciais e experiência prática valorizada pelo mercado.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header">
+              <span>CCNAv7: Introduction to Networks</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body">
+              <p>
+                Cisco Networking Academy. junho de 2023. 72h.
+              </p>
+              <p>
+                Introdução aos fundamentos de redes de computadores, incluindo modelos OSI e TCP/IP, endereçamento IP, sub-redes, roteamento, switches e protocolos essenciais. Aprendizado prático sobre configuração de dispositivos Cisco, análise de topologias, resolução de problemas de conectividade e segurança básica de redes. O curso também abordou conceitos de VLANs, acesso remoto, comandos CLI e simulações em laboratório de ambientes reais de TI.
+              </p>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__header end">
+              <span>Network Security</span>
+              <i class="bi bi-caret-down-fill"></i>
+            </button>
+            <div class="accordion__body end">
+              <p>
+                Cisco Networking Academy. Agosto 2023. 40h.
+              </p>
+              <p>
+                Curso focado em segurança de redes, abordando ameaças cibernéticas, criptografia, firewalls, VPNs e práticas recomendadas para proteger redes. Inclui conceitos de segurança de dispositivos, políticas de segurança, autenticação e controle de acesso. O curso também cobre a identificação e mitigação de vulnerabilidades, além de práticas para garantir a integridade e confidencialidade dos dados em redes corporativas.
+              </p>
+            </div>
+          </div>
+        </div>
+  </section>
+  
+  <section id="contato" class="contact">
+    <h2>Contate-me</h2>
+    <p>Estou disponível para serviços e novas conexões.
+    </p>
+    <ul class="menu menu--social">
+      <li>
+        <a class="menu__link" href="https://github.com/SpyHenry" target="_blank">
+          <i class="menu__icon bi bi-github"></i>
+          <span>GitHub</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.linkedin.com/in/henrique-baptista-bandeira" target="_blank">
+          <i class="menu__icon bi bi-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+      </li>
+      <li>
+        <a class="menu__link" href="https://www.instagram.com/henry_bband/" target="_blank">
+          <i class="menu__icon bi bi-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </li>
+    </ul>
+    <a href="mailto:henrybbandeira@gmail.com">
+      <button class="btn btn--primary">
+        <span class="email">henrybbandeira@gmail.com</span>
+      </button>  
+    </a>
+  </section>
+
+  <footer>
+    <p>
+      © 2025. Portfólio desenvolvido por <a href="https://github.com/SpyHenry" target="_blank">Henrique Baptista Bandeira</a>.
+    </p>
+  </footer>
+  <script src="./assets/script/engine.js"></script>
 </body>
 </html>
