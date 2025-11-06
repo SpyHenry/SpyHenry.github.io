@@ -433,14 +433,20 @@ main {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  gap: 0.75rem;
+  align-items: stretch;
 }
 
 .card__buttons .btn {
   padding: .65rem 1.25rem;
+  flex: 1 1 auto;
+  min-width: fit-content;
+  transition: all 0.3s ease;
 }
 
 .card__buttons .btn span {
     font-size: 1rem;
+    white-space: nowrap;
 }
 
 .card__body .technologies__list {
@@ -754,6 +760,13 @@ footer p {
   .card__buttons .btn,
   .description__buttons .btn {
     width: auto;
+    min-width: 140px;
+    flex: 1 1 calc(50% - 0.5rem);
+    max-width: 250px;
+  }
+  
+  .card__buttons {
+    gap: 1rem;
   }
 }
 
